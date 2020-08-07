@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "compile": "yarn ts-node src/*",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint \"**/*.ts\"",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -31,10 +40,16 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
-    "ts-jest": "^26.1.1"
-  },"jest":{
-    "preset":"ts-jest",
-    "modulePathIgnorePatterns":["<rootDir>/dist"],
-    "setupFiles": ["./jest.setup.js"]
+    "ts-jest": "^26.1.1",
+    "lint-staged": "^10.2.11"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist"
+    ],
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
   }
 }
