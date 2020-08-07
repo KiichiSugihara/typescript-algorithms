@@ -1,6 +1,6 @@
 import LinkedList from "../linked-list";
 
-test("LinkedList INSPECTION", () => {
+test("INSPECTION", () => {
   // LinkedList インスタンス作成
   const list = new LinkedList<string>();
   // 空のときのisEmpty
@@ -14,7 +14,7 @@ test("LinkedList INSPECTION", () => {
   // 追加済みのsize
   expect(list.size()).toBe(1);
 });
-test("addFront & addBack", () => {
+test("INSERTION", () => {
   const list = new LinkedList<string>();
   list.addFront("one");
   expect(list.isEmpty()).toBe(false);
@@ -25,4 +25,7 @@ test("addFront & addBack", () => {
   // addFront
   list.addFront("zero");
   expect(list.get(0)).toBe("zero");
+  // addAt
+  list.addAt(1, "insert");
+  expect(list.get(1)).toBe("insert");
 });
