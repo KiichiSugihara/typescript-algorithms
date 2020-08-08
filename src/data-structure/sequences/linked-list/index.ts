@@ -1,1 +1,1 @@
-export { default } from "./linked-list";
+export { LinkedList } from "./linked-list";

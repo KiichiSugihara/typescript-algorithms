@@ -1,4 +1,4 @@
-import LinkedList from "../linked-list";
+import { LinkedList } from "../index";
 
 test("INSPECTION", () => {
   // LinkedList インスタンス作成

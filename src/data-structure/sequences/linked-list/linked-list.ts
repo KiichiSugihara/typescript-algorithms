@@ -1,4 +1,4 @@
-import LinkedListNode from "./linked-list-node";
+import { LinkedListNode } from "./linked-list-node";
 import * as utils from "../../util";
 
 interface List<T> {
@@ -7,7 +7,7 @@ interface List<T> {
   size: number;
 }
 
-class LinkedList<T> implements Iterable<T> {
+export class LinkedList<T> implements Iterable<T> {
   private list: List<T> | undefined;
   private equalsF: utils.EqualsFunction<T> = utils.defaultEquals;
 
@@ -181,7 +181,7 @@ class LinkedList<T> implements Iterable<T> {
   /**
    * Removes the first occurrence of the specified item in the linked list.
    * @param {T} value - value to search for
-   * @return {number} the index of the first occurence of the element, and -1
+   * @return {number} the index of the first occurrence of the element, and -1
    * if the element does not exist.
    */
   indexOf(value: T): number {
@@ -265,7 +265,7 @@ class LinkedList<T> implements Iterable<T> {
     return val;
   }
   /**
-   * Removes first occurence of node with specified value. Returns true if
+   * Removes first occurrence of node with specified value. Returns true if
    * removal was successful, and false otherwise. - O(n)
    * @param {T} val - value to remove
    * @returns {T} - value of removed node
@@ -339,5 +339,3 @@ class LinkedList<T> implements Iterable<T> {
     }
   }
 }
-
-export default LinkedList;

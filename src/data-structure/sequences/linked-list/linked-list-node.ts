@@ -1,7 +1,7 @@
 /**
  * 連結リスト(linked-list)に使うNodeの定義
  */
-class LinkedListNode<T> {
+export class LinkedListNode<T> {
   val: T;
   next: LinkedListNode<T> | null;
   prev: LinkedListNode<T> | null;
@@ -12,5 +12,3 @@ class LinkedListNode<T> {
     this.prev = null;
   }
 }
-
-export default LinkedListNode;
