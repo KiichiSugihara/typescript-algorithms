@@ -9,7 +9,7 @@ test("isPrimeNormal", () => {
   expect(isPrime(5249287)).toBe(true);
 });
 
-test("isPrimeNormal", () => {
+test("isPrime", () => {
   expect(isPrime(1)).toBe(false);
   expect(isPrime(2)).toBe(true);
   expect(isPrime(12)).toBe(false);
