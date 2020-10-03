@@ -1,8 +1,11 @@
 import { checkLeapYear } from "./checkLeapYear";
 /**
  * getDaysFromNewYear'sDay - O(?)
- * @param {year,month,day} x - the number for isPrime-check
- * @return {number}
+ *
+ * @param year - the number for year
+ * @param month - the number for month
+ * @param day  - the number for day
+ * @return number from newYearDay
  */
 export function getDaysFromNewYearDay(
   year: number,
