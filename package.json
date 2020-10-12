@@ -22,6 +22,15 @@
   },
   "author": "Kiichi Sugihara",
   "license": "ISC",
+  "keywords": [
+    "computer-science",
+    "cs",
+    "algorithms",
+    "data-structures",
+    "typescript",
+    "algorithm",
+    "typescript-algorithms"
+  ],
   "bugs": {
     "url": "https://github.com/KiichiSugihara/typescript-algorithms/issues"
   },
@@ -38,10 +47,11 @@
     "eslint": "^7.3.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "ts-jest": "^26.1.1",
-    "lint-staged": "^10.2.11"
+    "ts-jest": "^26.1.1"
   },
   "jest": {
     "preset": "ts-jest",
