@@ -1,3 +1,4 @@
+// ２つutilとかに移動してもいいかも
 /**
  * Returns the leftmost position that `target` should go to such that the
  * sequence remains sorted.
@@ -53,5 +54,6 @@ export function bisectRight(arr: Array<number>, target: number): number {
  */
 export function binarySearch(arr: Array<number>, target: number): number {
   const idx = bisectLeft(arr, target);
+  // なぜこの確認いるの？
   return idx < arr.length && arr[idx] === target ? idx : -1;
 }
