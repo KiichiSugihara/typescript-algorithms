@@ -2,6 +2,11 @@
 
 Algorithms &amp; Data Structure with TypeScript
 
+## Policy
+
+- No dependency
+- Easy to use each module
+
 ## setup
 
 ```bash
@@ -14,3 +19,8 @@ npm install -g ts-node
 ```bash
 yarn ts-node src/*
 ```
+
+## test
+
+bash
+yarn test
