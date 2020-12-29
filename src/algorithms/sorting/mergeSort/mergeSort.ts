@@ -18,7 +18,6 @@ export function mergeSort(arr: Array<number>): Array<number> {
 
   // Using recursion to combine the left and right
   const sorted = merge(mergeSort(left), mergeSort(right));
-  console.log(sorted);
   return sorted;
 }
 

@@ -6,11 +6,9 @@
  */
 export function shellSort(arr: Array<number>): Array<number> {
   let step = Math.floor(arr.length / 3);
-  let counter = 0;
   for (step; step > 0; step = Math.floor(step / 3)) {
     //間隔をあけて挿入ソートを行う
     //挿入する値を１つずつ取り出す繰り返し
-    counter++;
     for (let i = step; i < arr.length; i++) {
       //挿入する値を一時的に保存する
       const tmp = arr[i];
@@ -29,7 +27,5 @@ export function shellSort(arr: Array<number>): Array<number> {
       arr[j] = tmp;
     }
   }
-  console.log(counter);
-  console.log(arr);
   return arr;
 }
