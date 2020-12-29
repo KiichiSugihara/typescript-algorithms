@@ -1,4 +1,4 @@
-import { LinkedListNode } from "./linked-list-node";
+import { LinkedListNode } from "./linkedListNode";
 import * as utils from "../../util";
 
 interface List<T> {
