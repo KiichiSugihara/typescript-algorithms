@@ -1,11 +1,13 @@
 /**
- * TemplateFunction  - O(1)
- * @param {number} x - the number for is0check
- * @return {boolean}
+ * TribonacciRecursion
+ * @param {number} x - the number order for tribonacci
+ * @return {number} - Tribonacci number
  */
-export function templateIs0(x: number): boolean {
-  if (x === 0) {
-    return true;
-  }
-  return false;
+export function tribonacciRecursion(n: number): number {
+  if (n < 3) return n === 2 ? 1 : 0;
+  return (
+    tribonacciRecursion(n - 3) +
+    tribonacciRecursion(n - 2) +
+    tribonacciRecursion(n - 1)
+  );
 }
