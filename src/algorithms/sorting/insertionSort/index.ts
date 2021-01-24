@@ -1,1 +1,0 @@
-export { insertionSort } from "./insertionSort";
