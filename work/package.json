@@ -2,7 +2,6 @@
   "name": "typescript-algorithms",
   "version": "1.0.0",
   "description": "Algorithms &amp; Data Structure with TypeScript",
-  "main": "index.js",
   "scripts": {
     "compile": "yarn ts-node src/*",
     "test": "jest",
