@@ -6,14 +6,12 @@
     "compile": "yarn ts-node src/*",
     "test": "jest",
     "lint": "eslint \"**/*.ts\"",
-    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
-    "precommit": "lint-staged"
+    "format": "prettier --write \"**/*.{js,ts,json,md}\""
   },
-  "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "git add"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format && npm run test"
+    }
   },
   "repository": {
     "type": "git",
@@ -48,7 +46,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "jest": "^26.1.0",
-    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.1"
   },
